@@ -1,0 +1,307 @@
+body {
+    /*font for generic stuff*/
+    font-family: Arial, sans-serif;
+    background-color: #1b2a3b;
+    margin: 0;
+    padding: 0;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+h3 {
+    text-align: center;
+    color: #ecf0f1;
+    margin: 20px;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h2 {
+    color: #ecf0f1;
+    text-align: center;
+}
+
+header {
+    background-color: #e74c3c;
+    padding: 15px;
+}
+
+header nav ul {
+    /*Removes list styling for the menu and centers the items.*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    /*Styles navigation links*/
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+footer {
+    /* Styles the footer*/
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: #f39c12;
+}
+
+#featured-events {
+    /*layout for featured event*/
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.fight-item {
+    /*Styles fighter left and right stuff*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+
+
+.fighter-name {
+    color: #000000; 
+}
+
+.fighter-record {
+    color: #000000;  
+}
+
+.fighter-weight {
+    color: #000000;  
+}
+
+
+.fighter-photo {
+ 
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.fighter-flag {
+
+    width: 75px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.fighter-details p {
+    margin: 0;
+    font-size: 20px;
+}
+    .fighter-details-box, .fighter-details-box2 {
+        border-radius: 10px;
+        padding: 20px; 
+        margin-bottom: 20px; 
+        text-align: center;
+        color: #f39c12;
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box; 
+    }
+
+.fighter-details-box2 {
+    background-color: #2f7daacb;
+    border: 1px solid #001aff;
+    width: 50%; 
+    max-width: 50%;
+    height: 50%;
+    max-height: 50%;
+}
+
+.fighter-details-box {
+    background-color: #30030350;
+    border: 1px solid #ff0000;
+    width: 50%; 
+    max-width: 50%;
+    height: 50%;
+    max-height: 50%;
+}
+
+
+.event-card {
+    /*Styles event cards*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e74c3c;
+    padding: 20px;
+    border-radius: 30px;
+    padding-top: 30px;
+    transition: transform 0.5s;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    max-width: 90%;
+}
+
+.event-card a {
+    /*Adds style and color to the view detail buttons*/
+    margin-top: 15px;
+    padding: 20px 200px;
+    background-color: #f39c12;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+}
+
+.event-card:hover {
+    transform: scale(1.004);
+}
+
+.organization-logo {
+    max-width: 20%;
+    height: auto;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.auth-box {
+    background-color: #34495e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #444;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #444;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #f39c12;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e60000;
+}
+
+fieldset {
+    /*Removes borders*/
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px -10px;
+    border: 1px solid #f39c12;
+    border-radius: 5px;
+    background-color: #444;
+    color: #ffffff;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #f39c12;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #f39c12;
+}

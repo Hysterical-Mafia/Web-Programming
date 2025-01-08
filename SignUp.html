@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMA Insider - Sign Up / Log In</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Events.html" >Events</a></li>
+                <li><a href="SignUp.html" >Sign Up/Log In</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h3>SIGN UP FOR A REMINDER WHEN EVENTS GO LIVE</h3>
+
+     <!--Forms-->
+     <div class="auth-container">
+        <!--Sign-Up Form-->
+        <div class="auth-box">
+            <h2>Sign Up</h2>
+            <form name="SignUpForm" onsubmit="return ValidateSignUpForm()">
+                <fieldset>
+                    <legend>Create an Account</legend><br>
+           
+                    Email: <br> <input type="text" name="Email" placeholder="Email"/><br><br>
+              
+                    Phone Number: <br> <input type="text" name="PhoneNumber" placeholder="Phone Number"/> <br><br>
+             
+                    Password:<br> <input type="password" name="Password" placeholder="Password"/> <br><br>
+             
+                    Confirm Password:<br> <input type="password" name="ConfirmPassword" placeholder="Confirm Password"/> <br><br>
+                  
+                    <input type="submit" value="Sign Up"/>
+                </fieldset>
+            </form>
+        </div>
+
+        <!--Sign-In form-->
+        <div class="auth-box">
+            <h2>Sign In</h2>
+            <form name="SignInForm" onsubmit="return ValidateSignInForm()">
+                <fieldset>
+                    <legend>Access Your Account</legend><br>
+                  
+                    Email:<br> <input type="text" name="Email" placeholder="Email"/> <br><br>
+                   
+                    Password:<br> <input type="password" name="Password" placeholder="Password"/> <br><br>
+                   
+                    <input type="submit" value="Sign In"/>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!--footer-->
+    <footer>
+        <ul>
+            <li><a href="Contact.html" >Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
